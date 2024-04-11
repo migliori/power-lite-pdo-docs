@@ -1,0 +1,11 @@
+{{ if .Get "type" }}
+bool|string
+{{ end }}
+
+{{ if .Get "description" }}
+The <a href="/docs/{{ $.Page.Param "doc_version" }}/debugging-in-powerlitepdo/">Debug mode</a>
+{{ end }}
+
+{{ if .Get "examples" }}
+<code class="{{ .Page.Site.Params.arguments_code_class }}">false</code>, <code class="{{ .Page.Site.Params.arguments_code_class }}">true</code> or <code class="{{ .Page.Site.Params.arguments_code_class }}">'silent'</code>
+{{ end }}

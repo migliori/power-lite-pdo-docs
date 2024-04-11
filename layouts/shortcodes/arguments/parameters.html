@@ -1,0 +1,11 @@
+{{ if .Get "type" }}
+?array
+{{ end }}
+
+{{ if .Get "description" }}
+An array with the followings optional key/value pairs:<pre class="{{ .Page.Site.Params.arguments_code_class }}">[<br>    'selectDistinct' => bool,<br>    'orderBy' => string,<br>    'groupBy' => string,<br>    'limit' => int|string<br>]</pre>
+{{ end }}
+
+{{ if .Get "examples" }}
+<pre class="{{ .Page.Site.Params.arguments_code_class }}">['limit' => 10]<br>['orderBy' => 'username ASC']</pre>
+{{ end }}

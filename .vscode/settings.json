@@ -1,0 +1,26 @@
+{
+"favorites.resources": [
+        "C:\\Users\\gille\\.vscode\\global\\settings.json",
+        "C:\\Users\\gille\\.vscode\\global\\sftp.json",
+        "C:\\Users\\gille\\.vscode\\global\\tasks.json",
+        "C:\\Users\\gille\\AppData\\Roaming\\Code\\User\\snippets",
+        "C:\\Windows\\System32\\drivers\\etc\\hosts",
+        "C:\\Users\\gille\\AppData\\Roaming\\Composer\\vendor\\squizlabs\\php_codesniffer\\CodeSniffer.conf",
+        "C:\\Users\\gille\\.vscode\\ai-prompts"
+    ],
+    "files.eol": "\n",
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "always"
+    },
+    "php.validate.enable": false,
+    "phpsab.autoRulesetSearch": false,
+    "phpsab.standard": "PSR12",
+    "phpsab.snifferArguments": [
+        "--standard=PSR12",
+        "--sniffs=Generic.PHP.DeprecatedFunctions",
+        "--ignore=*/DOCS/*,*/SOURCES/*,*/node_modules/*,*/vendor/*",
+        "--runtime-set",
+        "testVersion",
+        "8.2"
+    ]
+}

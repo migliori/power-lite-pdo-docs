@@ -1,0 +1,11 @@
+{{ if .Get "type" }}
+string
+{{ end }}
+
+{{ if .Get "description" }}
+The SQL FROM clause
+{{ end }}
+
+{{ if .Get "examples" }}
+<pre class="{{ .Page.Site.Params.arguments_code_class }}">'users'<br>'users INNER JOIN profiles ON users.id = profiles.user_id'</pre>
+{{ end }}

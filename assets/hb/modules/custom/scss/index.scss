@@ -2,6 +2,19 @@
 
 /*! purgecss start ignore */
 
-/*! PUT YOU STYLE HERE TO AVOID GETTING REMOVING BY PURGECSS. */
+.hb-header-nav {
+    .navbar-brand {
+        margin-top: -.5rem;
+        margin-bottom: -.5rem;
+    }
+
+    .hb-header-logo {
+        height: 48px;
+    }
+}
+
+.hb-blog-post-card-img {
+    object-fit: contain !important;
+}
 
 /*! purgecss end ignore */

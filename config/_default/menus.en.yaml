@@ -1,74 +1,47 @@
 main:
-  - name: Support
-    identifier: support
+  - name: Home
     weight: 100
-    url: https://github.com/hbstack
+    url: /
     params:
-      header: The HB support community.
       icon:
-        vendor: font-awesome-solid
-        name: headset
+        vendor: bs
+        name: house
 
-  - name: Documentations
-    parent: support
-    url: https://hbstack.dev/
-    weight: 1
+  - name: Documentation
+    url: /docs/
+    weight: 200
     params:
       icon:
         vendor: bs
         name: book
-        className: text-primary
-      description: The documentations.
+
+  - name: Support
+    identifier: support
+    weight: 300
+    url: https://github.com/migliori/power-lite-pdo/issues
+    params:
+      header: Need Help?
+      icon:
+        vendor: bs
+        name: headset
 
   - name: GitHub
     parent: support
-    url: https://github.com/hbstack
-    weight: 11
+    url: https://github.com/migliori/power-lite-pdo/issues
+    weight: 200
     params:
       icon:
-        vendor: fab
+        vendor: bs
         name: github
       description: The code repository.
 
-  - name: Discussion
+  - name: Miglisoft
     parent: support
-    url: https://github.com/orgs/hbstack/discussions
-    weight: 12
+    url: https://www.miglisoft.com/#contact
+    weight: 100
     params:
       icon:
-        vendor: font-awesome-regular
-        name: comments
-        color: green
-      description: Ask questions and share your ideas.
-
-  - name: Bug Report
-    parent: support
-    url: https://github.com/orgs/hbstack/discussions/new?category=issues-and-bugs
-    weight: 13
-    params:
-      icon:
-        vendor: font-awesome-solid
-        name: bug
-        color: red
-      description: Tell us about a bug or issue.
-
-  - name: Feature Request
-    parent: support
-    url: https://github.com/orgs/hbstack/discussions/new?category=ideas
-    weight: 14
-    params:
-      icon:
-        vendor: font-awesome-regular
-        name: lightbulb
-        color: orange
-      description: Suggest new or updated features.
-  
-  - name: Mastodon
-    parent: support
-    url: https://techhub.social/@hbstack
-    weight: 16
-    params:
-      icon:
-        vendor: simple
-        name: mastodon
-      description: Follow us on Mastodon to get latest updates.
+        vendor: bs
+        name: envelope-at-fill
+        # className: text-primary
+      description: Contact the author

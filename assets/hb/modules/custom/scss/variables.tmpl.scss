@@ -1,4 +1,18 @@
 // Override the Bootstrap and HB SCSS variables.
 // See https://github.com/twbs/bootstrap/blob/main/scss/_variables.scss.
 // See https://github.com/twbs/bootstrap/blob/main/scss/_variables-dark.scss.
-// $primary: red;
+$primary: #0b6977;
+$danger: #c48779;
+
+$gray-100: #F9F8F6;
+$gray-200: #EFEDE9;
+$gray-300: #DFDBD4;
+$gray-400: #CFC9BE;
+$gray-500: #BFB7A8;
+$gray-600: #8F897E;
+$gray-700: #605C54;
+$gray-800: #302E2A;
+$gray-900: #1D1B19;
+
+$body-color: $gray-900;
+$body-secondary-color: rgba($body-color, .95);

@@ -1,0 +1,11 @@
+{{ if .Get "type" }}
+?array
+{{ end }}
+
+{{ if .Get "description" }}
+An array of SQL WHERE conditions
+{{ end }}
+
+{{ if .Get "examples" }}
+<pre class="{{ .Page.Site.Params.arguments_code_class }}">['status' => 'active']<br>['users.id' => 'profiles.user_id']<br>['users.id >' => 10]<br>['users.id >' => 10, 'users.username LIKE' => '%me%']</pre>
+{{ end }}
