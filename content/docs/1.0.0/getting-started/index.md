@@ -10,6 +10,12 @@ nav_icon:
   color: '#548289'
 ---
 
+## Installation
+
+The PowerLite PDO library is available on GitHub at [https://github.com/migliori/power-lite-pdo](https://github.com/migliori/power-lite-pdo) and is distributed under the [GNU General Public License v3.0](https://choosealicense.com/licenses/gpl-3.0/).
+
+For detailed installation instructions, please visit the [Installation page](/installation/).
+
 ## Setup the Database Connection
 
 To set up your database connection, you will need to modify the `vendor/migliori/power-lite-pdo/src/connection.php` file. This file contains the configuration for the database connection using PHP's PDO (PHP Data Objects).
