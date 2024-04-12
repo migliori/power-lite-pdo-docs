@@ -4,44 +4,44 @@ main:
     url: /
     params:
       icon:
-        vendor: bs
+        vendor: fas
         name: house
 
   - name: Documentation
     url: /docs/
-    weight: 200
+    weight: 300
     params:
       icon:
-        vendor: bs
-        name: book
+        vendor: fas
+        name: book-open
 
   - name: Support
     identifier: support
-    weight: 300
+    weight: 400
     url: https://github.com/migliori/power-lite-pdo/issues
     params:
       header: Need Help?
       icon:
-        vendor: bs
+        vendor: fas
         name: headset
 
   - name: GitHub
     parent: support
     url: https://github.com/migliori/power-lite-pdo/issues
-    weight: 200
+    weight: 100
     params:
       icon:
-        vendor: bs
+        vendor: fab
         name: github
       description: The code repository.
 
   - name: Miglisoft
     parent: support
     url: https://www.miglisoft.com/#contact
-    weight: 100
+    weight: 200
     params:
       icon:
-        vendor: bs
-        name: envelope-at-fill
+        vendor: fas
+        name: at
         # className: text-primary
       description: Contact the author

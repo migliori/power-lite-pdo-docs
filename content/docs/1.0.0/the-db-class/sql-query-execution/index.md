@@ -20,7 +20,7 @@ images:
 #     weight: 100
 #     params:
 #       icon:
-#         vendor: bs
+#         vendor: fas
 #         name: book
 #         color: '#e24d0e'
 ---

@@ -10,16 +10,6 @@ nav_icon:
   color: '#548289'
 ---
 
-## Installation
-
-To install the PowerLite PDO library, you need to use Composer, the PHP dependency manager. If you haven't installed Composer yet, you can download it from [here](https://getcomposer.org/).
-
-Once you have Composer installed, you can install the PowerLite PDO library by running the following command in your terminal:
-
-```sh
-composer require migliori/power-lite-pdo
-```
-
 ## Setup the Database Connection
 
 To set up your database connection, you will need to modify the `vendor/migliori/power-lite-pdo/src/connection.php` file. This file contains the configuration for the database connection using PHP's PDO (PHP Data Objects).

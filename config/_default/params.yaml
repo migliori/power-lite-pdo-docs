@@ -26,16 +26,13 @@ hb:
     logo: '/images/powerlite-pdo-logo-horizontal-small.png'
     logo_bg: '#ffffff' # logo background color, used by logo with transparent background.
     # see https://hbstack.dev/en/docs/modules/socials/.
-    git_repo:
-      name: 'power-lite-pdo'
-      owner: 'migliori'
-      service: 'github'
     socials:
-      github: migliori
+      github: migliori/power-lite-pdo
   footer:
     # see https://hbstack.dev/en/docs/modules/socials/.
     socials:
-      github: migliori
+      github: migliori/power-lite-pdo
+    powered_by: false
   # terms:
   #   # the paginate for categories, tags, series list pages.
   #   paginate: 12
@@ -45,10 +42,6 @@ hb:
   #     repo_id: R_kgDOJP3qtA
   #     category_id: DIC_kwDOJP3qtM4CVavM
   content_panel:
-    repo:
-      service: github # github or gitlab.
-      repo: migliori/power-lite-pdo
-      branch: main
       # subpath: exampleSite
   # gallery:
   #   thumbnail_size: "x640"
