@@ -35,10 +35,30 @@ main:
         name: github
       description: The code repository.
 
+  - name: Packagist
+    parent: support
+    url: https://packagist.org/packages/migliori/power-lite-pdo
+    weight: 200
+    params:
+      icon:
+        vendor: fas
+        name: cube
+      description: The package repository.
+
+  - name: Changelog
+    parent: support
+    url: https://github.com/migliori/power-lite-pdo/blob/main/CHANGELOG.md
+    weight: 300
+    params:
+      icon:
+        vendor: fas
+        name: clock
+      description: What's new?
+
   - name: Miglisoft
     parent: support
     url: https://www.miglisoft.com/#contact
-    weight: 200
+    weight: 400
     params:
       icon:
         vendor: fas
