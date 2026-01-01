@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Documentation on PowerLite PDO Documentation</title>
+    <link>https://www.powerlitepdo.com/docs/</link>
+    <description>Recent content in Documentation on PowerLite PDO Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2024-{year} [Miglisoft](https://www.miglisoft.com/). All Rights Reserved.</copyright>
+    <lastBuildDate>Sun, 31 Mar 2024 10:08:31 +0200</lastBuildDate>
+    <atom:link href="https://www.powerlitepdo.com/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Debugging in PowerLitePdo</title>
+      <link>https://www.powerlitepdo.com/docs/1.0.0/debugging-in-powerlitepdo/</link>
+      <pubDate>Sun, 31 Mar 2024 10:08:31 +0200</pubDate>
+      <guid>https://www.powerlitepdo.com/docs/1.0.0/debugging-in-powerlitepdo/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;PowerLitePdo provides a robust debugging system that allows developers to track and understand the execution of SQL queries. The debugging system is built around two contexts: a global context and a local context. The local context is attached to method calls like &lt;code&gt;select()&lt;/code&gt;, &lt;code&gt;query()&lt;/code&gt;, &lt;code&gt;insert()&lt;/code&gt;, &lt;code&gt;update()&lt;/code&gt;, &lt;code&gt;delete()&lt;/code&gt;, etc., and takes precedence over the global context.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Architecture Overview</title>
+      <link>https://www.powerlitepdo.com/docs/1.0.0/architecture-overview/</link>
+      <pubDate>Thu, 28 Mar 2024 08:07:17 +0100</pubDate>
+      <guid>https://www.powerlitepdo.com/docs/1.0.0/architecture-overview/</guid>
+      <description>The PowerLite PDO library provides a lightweight and powerful abstraction layer for PHP&#39;s PDO (PHP Data Objects) extension. The library is designed with a clear separation of concerns in mind, and it uses Dependency Injection (DI) to manage dependencies between different parts of the system.&#xA;Structure and Logic The project is organized into several key components:&#xA;Db: src/Db.php Main interface for interacting with the database. It handles connection management, query execution, and result processing.</description>
+    </item>
+    <item>
+      <title>Getting Started</title>
+      <link>https://www.powerlitepdo.com/docs/1.0.0/getting-started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.powerlitepdo.com/docs/1.0.0/getting-started/</guid>
+      <description>Installation The PowerLite PDO library is available on GitHub at https://github.com/migliori/power-lite-pdo and is distributed under the GNU General Public License v3.0.&#xA;For detailed installation instructions, please visit the Installation page.&#xA;Setup the Database Connection To set up your database connection, you will need to modify the vendor/migliori/power-lite-pdo/src/connection.php file. This file contains the configuration for the database connection using PHP&#39;s PDO (PHP Data Objects).&#xA;Here are the steps to set up your database connection:</description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>https://www.powerlitepdo.com/docs/1.0.0/security/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.powerlitepdo.com/docs/1.0.0/security/</guid>
+      <description>The connection file, located at src/connection.php, contains important information for connecting to your database. It includes constants such as DB_NAME, DB_PASS, DB_PORT, and others. These constants are crucial for establishing a secure connection to your database.&#xA;While the connection file is already secure in its current location, there are additional measures that can be taken to enhance its security. These measures ensure that the sensitive information contained within the file is protected from unauthorized access.</description>
+    </item>
+  </channel>
+</rss>

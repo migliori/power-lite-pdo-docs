@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Db - Selecting and Fetching Records on PowerLite PDO Documentation</title>
+    <link>http://localhost:1313/docs/1.0.0/the-db-class/selecting-and-fetching-records/</link>
+    <description>Recent content in Db - Selecting and Fetching Records on PowerLite PDO Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2024-{year} [Miglisoft](https://www.miglisoft.com/). All Rights Reserved.</copyright>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/docs/1.0.0/the-db-class/selecting-and-fetching-records/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/docs/1.0.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/1.0.0/</guid>
+      <description>Db::selectRow public function selectRow($from, $fields = &amp;#39;*&amp;#39;, $where = [], $fetch_parameters = PDO::FETCH_OBJ, $debug = null) Argument Name Argument Type Description Examples $from string The SQL FROM clause &#39;users&#39;&#xA;&#39;users INNER JOIN profiles ON users.id = profiles.user_id&#39; $fields string|array The fields to select &#39;id, username, email&#39;&#xA;[&#39;id&#39;, &#39;username&#39;, &#39;email&#39;] $where ?array An array of SQL WHERE conditions [&#39;status&#39; =&gt; &#39;active&#39;]&#xA;[&#39;users.id&#39; =&gt; &#39;profiles.user_id&#39;]&#xA;[&#39;users.id &gt;&#39; =&gt; 10]&#xA;[&#39;users.id &gt;&#39; =&gt; 10, &#39;users.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/docs/1.0.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/1.0.0/</guid>
+      <description>Select() The Db::Select() method prepares and executes the SQL SELECT statement in a single function call.&#xA;Method Signature public function select( string $from, string|array $fields, ?array $where = [], ?array $parameters = [], ?string $debug = null ): mixed Arguments Summary Argument Name Argument Type Description Examples $from string The SQL FROM clause &#39;users&#39;&#xA;&#39;users INNER JOIN profiles ON users.id = profiles.user_id&#39; $fields string|array The fields to select &#39;id, username, email&#39;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Pagination Class on PowerLite PDO Documentation</title>
+    <link>https://www.powerlitepdo.com/docs/1.0.0/the-pagination-class/</link>
+    <description>Recent content in The Pagination Class on PowerLite PDO Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2024-{year} [Miglisoft](https://www.miglisoft.com/). All Rights Reserved.</copyright>
+    <lastBuildDate>Fri, 29 Mar 2024 12:00:36 +0100</lastBuildDate>
+    <atom:link href="https://www.powerlitepdo.com/docs/1.0.0/the-pagination-class/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pagination - Options</title>
+      <link>https://www.powerlitepdo.com/docs/1.0.0/pagination-options/</link>
+      <pubDate>Fri, 29 Mar 2024 12:00:36 +0100</pubDate>
+      <guid>https://www.powerlitepdo.com/docs/1.0.0/pagination-options/</guid>
+      <description>&lt;p&gt;The PaginationOptions class and the Pagination::setOptions() method provide a way to customize the behavior and appearance of pagination in your application. By setting these options, you can control aspects such as the CSS classes applied to various elements of the pagination, the markup used for navigation buttons, the number of pages displayed in the navigation, and more.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pagination - Select and Paginate Results</title>
+      <link>https://www.powerlitepdo.com/docs/1.0.0/pagination-select-and-paginate-results/</link>
+      <pubDate>Fri, 29 Mar 2024 12:00:05 +0100</pubDate>
+      <guid>https://www.powerlitepdo.com/docs/1.0.0/pagination-select-and-paginate-results/</guid>
+      <description>&lt;p&gt;This guide provides a step-by-step tutorial on how to use PowerLite PDO for efficient record selection and pagination. We will be using the &lt;code&gt;Pagination&lt;/code&gt; class from the PowerLite PDO library.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

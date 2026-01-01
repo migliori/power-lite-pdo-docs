@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Query Builder on PowerLite PDO Documentation</title>
+    <link>https://www.powerlitepdo.com/docs/1.0.0/the-querybuilder/</link>
+    <description>Recent content in The Query Builder on PowerLite PDO Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2024-{year} [Miglisoft](https://www.miglisoft.com/). All Rights Reserved.</copyright>
+    <lastBuildDate>Fri, 29 Mar 2024 10:09:39 +0100</lastBuildDate>
+    <atom:link href="https://www.powerlitepdo.com/docs/1.0.0/the-querybuilder/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Query Builder - Introduction</title>
+      <link>https://www.powerlitepdo.com/docs/1.0.0/query-builder-introduction/</link>
+      <pubDate>Fri, 29 Mar 2024 10:09:39 +0100</pubDate>
+      <guid>https://www.powerlitepdo.com/docs/1.0.0/query-builder-introduction/</guid>
+      <description>&lt;p&gt;The PowerLite PDO QueryBuilder is a powerful tool in the Migliori PowerLitePdo library. It provides an easy-to-use, fluent interface for creating and executing database queries. Unlike the &lt;a&#xA;  href=&#34;command:_github.copilot.openSymbolInFile?%5B%22src%2FDb.php%22%2C%22Db%22%5D&#34;&#xA;  title=&#34;src/Db.php&#34;&#xA;  target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;&lt;code&gt;Db&lt;/code&gt;&lt;/a&gt; class, which provides a direct interface to the database, the QueryBuilder allows you to construct queries programmatically, providing a more flexible and intuitive approach to data manipulation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Query Builder - Transaction Management</title>
+      <link>https://www.powerlitepdo.com/docs/1.0.0/query-builder-transaction-management/</link>
+      <pubDate>Fri, 29 Mar 2024 08:58:18 +0100</pubDate>
+      <guid>https://www.powerlitepdo.com/docs/1.0.0/query-builder-transaction-management/</guid>
+      <description>&lt;p&gt;This page provides a practical guide with code samples for managing transactions using the &lt;code&gt;QueryBuilder&lt;/code&gt; class in the PowerLitePdo library. The following methods are covered:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a&#xA;  href=&#34;https://www.powerlitepdo.com/docs/1.0.0/querybuilder-transaction-management/#transactionbegin&#34;&#xA;  &#xA;  &gt;QueryBuilder::transactionBegin&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a&#xA;  href=&#34;https://www.powerlitepdo.com/docs/1.0.0/querybuilder-transaction-management/#transactioncommit&#34;&#xA;  &#xA;  &gt;QueryBuilder::transactionCommit&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a&#xA;  href=&#34;https://www.powerlitepdo.com/docs/1.0.0/querybuilder-transaction-management/#transactionrollback&#34;&#xA;  &#xA;  &gt;QueryBuilder::transactionRollback&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Query Builder - Insert Update Delete</title>
+      <link>https://www.powerlitepdo.com/docs/1.0.0/query-builder-insert-update-delete/</link>
+      <pubDate>Fri, 29 Mar 2024 08:12:08 +0100</pubDate>
+      <guid>https://www.powerlitepdo.com/docs/1.0.0/query-builder-insert-update-delete/</guid>
+      <description>&lt;p&gt;This page provides a comprehensive guide on how to use the &lt;code&gt;QueryBuilder&lt;/code&gt; class for &lt;code&gt;insert&lt;/code&gt;, &lt;code&gt;update&lt;/code&gt;, and &lt;code&gt;delete&lt;/code&gt; operations in your database. The guide includes practical code samples for each operation.&lt;/p&gt;&#xA;&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a&#xA;  href=&#34;https://www.powerlitepdo.com/docs/1.0.0/query-builder-insert-update-delete/#loading-the-querybuilder-class&#34;&#xA;  &#xA;  &gt;Loading the QueryBuilder Class&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a&#xA;  href=&#34;https://www.powerlitepdo.com/docs/1.0.0/query-builder-insert-update-delete/#insert-records&#34;&#xA;  &#xA;  &gt;Insert&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a&#xA;  href=&#34;https://www.powerlitepdo.com/docs/1.0.0/query-builder-insert-update-delete/#update-records&#34;&#xA;  &#xA;  &gt;Update&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a&#xA;  href=&#34;https://www.powerlitepdo.com/docs/1.0.0/query-builder-insert-update-delete/#delete-records&#34;&#xA;  &#xA;  &gt;Delete&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+    </item>
+    <item>
+      <title>Query Builder - SQL Query Execution</title>
+      <link>https://www.powerlitepdo.com/docs/1.0.0/query-builder-sql-query-execution/</link>
+      <pubDate>Fri, 29 Mar 2024 07:47:15 +0100</pubDate>
+      <guid>https://www.powerlitepdo.com/docs/1.0.0/query-builder-sql-query-execution/</guid>
+      <description>&lt;p&gt;This page provides a comprehensive guide on how to use the &lt;code&gt;QueryBuilder::query()&lt;/code&gt; method to execute SQL queries using prepared or non-prepared SQL strings.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Query Builder - Selecting and Fetching Records</title>
+      <link>https://www.powerlitepdo.com/docs/1.0.0/query-builder-selecting-and-fetching-records/</link>
+      <pubDate>Thu, 28 Mar 2024 11:59:00 +0100</pubDate>
+      <guid>https://www.powerlitepdo.com/docs/1.0.0/query-builder-selecting-and-fetching-records/</guid>
+      <description>&lt;p&gt;This page provides a comprehensive guide on how to select records from a database and fetch the results with the Query Builder.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

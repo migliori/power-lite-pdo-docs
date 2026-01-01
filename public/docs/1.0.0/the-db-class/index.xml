@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Db Class on PowerLite PDO Documentation</title>
+    <link>https://www.powerlitepdo.com/docs/1.0.0/the-db-class/</link>
+    <description>Recent content in The Db Class on PowerLite PDO Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2024-{year} [Miglisoft](https://www.miglisoft.com/). All Rights Reserved.</copyright>
+    <lastBuildDate>Fri, 29 Mar 2024 10:09:39 +0100</lastBuildDate>
+    <atom:link href="https://www.powerlitepdo.com/docs/1.0.0/the-db-class/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Db - Introduction</title>
+      <link>https://www.powerlitepdo.com/docs/1.0.0/db-introduction/</link>
+      <pubDate>Fri, 29 Mar 2024 10:09:39 +0100</pubDate>
+      <guid>https://www.powerlitepdo.com/docs/1.0.0/db-introduction/</guid>
+      <description>The Db class is a wrapper around the PHP Data Objects (PDO) extension and serves as a database abstraction layer to provide a simple, consistent interface for interacting with different types of databases.&#xA;It is designed to use procedural methods and is responsible for establishing a connection to the database, executing queries, and returning results. The Db class uses a DriverBase instance for the connection and a QueryBuilder instance for building and executing SQL queries.</description>
+    </item>
+    <item>
+      <title>Db - Database Structure Information</title>
+      <link>https://www.powerlitepdo.com/docs/1.0.0/db-database-structure-information/</link>
+      <pubDate>Fri, 29 Mar 2024 09:02:14 +0100</pubDate>
+      <guid>https://www.powerlitepdo.com/docs/1.0.0/db-database-structure-information/</guid>
+      <description>&lt;p&gt;This page provides a comprehensive guide on how to use the &lt;code&gt;Db&lt;/code&gt; class to retrieve information about the database structure. It includes practical code samples for each method.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Db - Transaction Management</title>
+      <link>https://www.powerlitepdo.com/docs/1.0.0/db-transaction-management/</link>
+      <pubDate>Fri, 29 Mar 2024 08:58:18 +0100</pubDate>
+      <guid>https://www.powerlitepdo.com/docs/1.0.0/db-transaction-management/</guid>
+      <description>&lt;p&gt;This page provides a practical guide with code samples for managing transactions using the &lt;code&gt;Db&lt;/code&gt; class in the PowerLitePdo library. The following methods are covered:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a&#xA;  href=&#34;https://www.powerlitepdo.com/docs/1.0.0/db-transaction-management/#transactionbegin&#34;&#xA;  &#xA;  &gt;Db::transactionBegin&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a&#xA;  href=&#34;https://www.powerlitepdo.com/docs/1.0.0/db-transaction-management/#transactioncommit&#34;&#xA;  &#xA;  &gt;Db::transactionCommit&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a&#xA;  href=&#34;https://www.powerlitepdo.com/docs/1.0.0/db-transaction-management/#transactionrollback&#34;&#xA;  &#xA;  &gt;Db::transactionRollback&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Db - Data Fetching and Conversion</title>
+      <link>https://www.powerlitepdo.com/docs/1.0.0/db-data-fetching-and-conversion/</link>
+      <pubDate>Fri, 29 Mar 2024 08:46:25 +0100</pubDate>
+      <guid>https://www.powerlitepdo.com/docs/1.0.0/db-data-fetching-and-conversion/</guid>
+      <description>&lt;p&gt;This page provides a comprehensive guide on how to use the Db class for data fetching and conversion. The following methods are covered:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a&#xA;  href=&#34;https://www.powerlitepdo.com/docs/1.0.0/db-data-fetching-and-conversion/#dbfetch&#34;&#xA;  &#xA;  &gt;Db::fetch&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a&#xA;  href=&#34;https://www.powerlitepdo.com/docs/1.0.0/db-data-fetching-and-conversion/#dbfetchall&#34;&#xA;  &#xA;  &gt;Db::fetchAll&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a&#xA;  href=&#34;https://www.powerlitepdo.com/docs/1.0.0/db-data-fetching-and-conversion/#dbconverttosimplearray&#34;&#xA;  &#xA;  &gt;Db::convertToSimpleArray&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a&#xA;  href=&#34;https://www.powerlitepdo.com/docs/1.0.0/db-data-fetching-and-conversion/#dbgethtml&#34;&#xA;  &#xA;  &gt;Db::getHTML&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Db - Insert Update Delete</title>
+      <link>https://www.powerlitepdo.com/docs/1.0.0/db-insert-update-delete/</link>
+      <pubDate>Fri, 29 Mar 2024 08:12:08 +0100</pubDate>
+      <guid>https://www.powerlitepdo.com/docs/1.0.0/db-insert-update-delete/</guid>
+      <description>&lt;p&gt;This page provides a practical guide on how to execute SQL queries using the &lt;code&gt;Db&lt;/code&gt; class in the PowerLitePdo library. We will cover the following methods:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a&#xA;  href=&#34;https://www.powerlitepdo.com/docs/1.0.0/db-insert-update-delete/#insert&#34;&#xA;  &#xA;  &gt;Db::insert&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a&#xA;  href=&#34;https://www.powerlitepdo.com/docs/1.0.0/db-insert-update-delete/#update&#34;&#xA;  &#xA;  &gt;Db::update&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a&#xA;  href=&#34;https://www.powerlitepdo.com/docs/1.0.0/db-insert-update-delete/#delete&#34;&#xA;  &#xA;  &gt;Db::delete&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Db - SQL Query Execution</title>
+      <link>https://www.powerlitepdo.com/docs/1.0.0/db-sql-query-execution/</link>
+      <pubDate>Fri, 29 Mar 2024 07:47:15 +0100</pubDate>
+      <guid>https://www.powerlitepdo.com/docs/1.0.0/db-sql-query-execution/</guid>
+      <description>&lt;p&gt;This page provides a comprehensive guide on how to execute SQL queries using the &lt;code&gt;Db&lt;/code&gt; class in your project. We will cover the following methods:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a&#xA;  href=&#34;https://www.powerlitepdo.com/docs/1.0.0/db-sql-query-execution/#query&#34;&#xA;  &#xA;  &gt;Db::query&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a&#xA;  href=&#34;https://www.powerlitepdo.com/docs/1.0.0/db-sql-query-execution/#queryrow&#34;&#xA;  &#xA;  &gt;Db::queryRow&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a&#xA;  href=&#34;https://www.powerlitepdo.com/docs/1.0.0/db-sql-query-execution/#queryvalue&#34;&#xA;  &#xA;  &gt;Db::queryValue&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a&#xA;  href=&#34;https://www.powerlitepdo.com/docs/1.0.0/db-sql-query-execution/#numrows&#34;&#xA;  &#xA;  &gt;Db::numRows&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Db - Selecting and Fetching Records</title>
+      <link>https://www.powerlitepdo.com/docs/1.0.0/db-selecting-and-fetching-records/</link>
+      <pubDate>Thu, 28 Mar 2024 11:59:00 +0100</pubDate>
+      <guid>https://www.powerlitepdo.com/docs/1.0.0/db-selecting-and-fetching-records/</guid>
+      <description>&lt;p&gt;This page provides a practical guide on how to use the &lt;code&gt;Db&lt;/code&gt; class for selecting and fetching records from a database. The following methods of the &lt;code&gt;Db&lt;/code&gt; class are covered:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a&#xA;  href=&#34;https://www.powerlitepdo.com/docs/1.0.0/db-selecting-and-fetching-records/#select&#34;&#xA;  &#xA;  &gt;Db::select&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a&#xA;  href=&#34;https://www.powerlitepdo.com/docs/1.0.0/db-selecting-and-fetching-records/#selectrow&#34;&#xA;  &#xA;  &gt;Db::selectRow&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a&#xA;  href=&#34;https://www.powerlitepdo.com/docs/1.0.0/db-selecting-and-fetching-records/#selectValue&#34;&#xA;  &#xA;  &gt;Db::selectValue&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a&#xA;  href=&#34;https://www.powerlitepdo.com/docs/1.0.0/db-selecting-and-fetching-records/#selectCount&#34;&#xA;  &#xA;  &gt;Db::selectCount&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a&#xA;  href=&#34;https://www.powerlitepdo.com/docs/1.0.0/db-selecting-and-fetching-records/#numRows&#34;&#xA;  &#xA;  &gt;Db::numRows&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

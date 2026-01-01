@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on PowerLite PDO Documentation</title>
+    <link>http://localhost:1313/blog/</link>
+    <description>Recent content in Blogs on PowerLite PDO Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2024-{year} [Miglisoft](https://www.miglisoft.com/). All Rights Reserved.</copyright>
+    <lastBuildDate>Wed, 27 Mar 2024 11:49:13 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Thing</title>
+      <link>http://localhost:1313/blog/thing/</link>
+      <pubDate>Wed, 27 Mar 2024 11:49:13 +0100</pubDate>
+      <guid>http://localhost:1313/blog/thing/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
