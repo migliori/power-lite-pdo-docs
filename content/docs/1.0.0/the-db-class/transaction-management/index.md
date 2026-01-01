@@ -38,9 +38,8 @@ This page provides a practical guide with code samples for managing transactions
 To use the `Db` class, you first need to load it within the Dependency Injection (DI) container. Here's how you can do it:
 
 ```php
-$container['db'] = function ($container) {
-    return new \Migliori\PowerLitePdo\Db($container['settings']['db']);
-};
+$container = require_once __DIR__ . '/../src/bootstrap.php';
+$db = $container->get(Db::class);
 ```
 
 ## transactionBegin {.mt-5}
