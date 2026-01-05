@@ -29,9 +29,9 @@ This page provides a practical guide on how to use the `Db` class for selecting 
 
 - [Db::select](/docs/{{< param "doc_version">}}/db-selecting-and-fetching-records/#select)
 - [Db::selectRow](/docs/{{< param "doc_version">}}/db-selecting-and-fetching-records/#selectrow)
-- [Db::selectValue](/docs/{{< param "doc_version">}}/db-selecting-and-fetching-records/#selectValue)
-- [Db::selectCount](/docs/{{< param "doc_version">}}/db-selecting-and-fetching-records/#selectCount)
-- [Db::numRows](/docs/{{< param "doc_version">}}/db-selecting-and-fetching-records/#numRows)
+- [Db::selectValue](/docs/{{< param "doc_version">}}/db-selecting-and-fetching-records/#selectvalue)
+- [Db::selectCount](/docs/{{< param "doc_version">}}/db-selecting-and-fetching-records/#selectcount)
+- [Db::numRows](/docs/{{< param "doc_version">}}/db-selecting-and-fetching-records/#numrows)
 
 <!--more-->
 
@@ -179,7 +179,6 @@ public function selectRow(
 {{< heading level="4" heading="Simple Use Case" small="Db::selectRow()" >}}
 
 ```php
-$db = new Db();
 $result = $db->selectRow('users', '*', ['id' => 1]);
 echo $result->name;
 ```
@@ -189,11 +188,131 @@ In this example, we are selecting all fields from the 'users' table where the 'i
 {{< heading level="4" heading="Complex Use Case with Joins and Specific Fields" class="mt-5" small="Db::selectRow()" >}}
 
 ```php
-$db = new Db();
 $result = $db->selectRow('users INNER JOIN profiles ON users.id = profiles.user_id', ['users.id', 'users.name', 'profiles.name AS profilesName'], 'users.id = 1', PDO::FETCH_ASSOC);
 echo $result['name'] . ' - ' . $result['profilesName'];
 ```
 
 In this example, we are selecting specific fields from a join between the 'users' and 'profiles' tables where the 'id' in 'users' table is 1. The result is fetched as an associative array. The 'debug' mode is also enabled.
+
+</article>
+
+{{< separator >}}
+
+<article>
+
+## selectValue()
+
+The `Db::SelectValue()` method prepares and executes the SQL SELECT statement in a single function call and returns a single value from the first column of the first row of the result set.
+
+### Method Signature ### {#selectValueMethodSignature .mt-5}
+
+```php
+public function selectValue(
+    string $from,
+    string $field,
+    ?array $where = [],
+    bool|string $debug = false
+): mixed
+```
+
+### Arguments Summary ### {#selectValueArgumentsSummary .mt-5}
+
+| Argument Name | Argument Type | Description | Examples |
+| --- | --- | --- | --- |
+| $from | {{< arguments/from type="true" >}} | {{< arguments/from description="true" >}} | {{< arguments/from examples="true" >}} |
+| $field | {{< arguments/fields type="true" >}} | {{< arguments/fields description="true" >}} | {{< arguments/fields examples="true" >}} |
+| $where | {{< arguments/where type="true" >}} | {{< arguments/where description="true" >}} | {{< arguments/where examples="true" >}} |
+| $debug | {{< arguments/debug type="true" >}} | {{< arguments/debug description="true" >}} | {{< arguments/debug examples="true" >}} |
+
+### Examples ### {#selectValueExamples .mt-5}
+
+{{< heading level="4" heading="Basic Example" small="Db::SelectValue()" >}}
+
+```php
+$from = 'users'; // The table name
+$field = ['email']; // The columns you want to select
+$where = ['status' => 'active']; // The conditions for the WHERE clause
+
+$userEmail = $db->selectValue($from, $field, $where);
+echo $userEmail; // Outputs the email of the first active user
+```
+
+In this example, we are selecting the 'email' field from the 'users' table where the 'status' is 'active'. The method returns the email of the first active user found in the database.
+
+</article>
+
+{{< separator >}}
+
+<article>
+
+## selectCount()
+
+The `Db::SelectCount()` method prepares and executes the SQL SELECT COUNT statement in a single function call and returns the count of records that match the specified conditions.
+
+### Method Signature ### {#selectCountMethodSignature .mt-5}
+
+```php
+public function selectCount(
+    string $from,
+    string|array $fields = ['*' => 'rowsCount'],
+    mixed $where = [],
+    ?array $parameters = [],
+    bool|string $debug = false
+): mixed
+```
+
+### Arguments Summary ### {#selectCountArgumentsSummary .mt-5}
+
+| Argument Name | Argument Type | Description | Examples |
+| --- | --- | --- | --- |
+| $from | {{< arguments/from type="true" >}} | {{< arguments/from description="true" >}} | {{< arguments/from examples="true" >}} |
+| $fields | {{< arguments/fields type="true" >}} | {{< arguments/fields description="true" >}} | {{< arguments/fields examples="true" >}} |
+| $where | {{< arguments/where type="true" >}} | {{< arguments/where description="true" >}} | {{< arguments/where examples="true" >}} |
+| $parameters | {{< arguments/parameters type="true" >}} | {{< arguments/parameters description="true" >}} | {{< arguments/parameters examples="true" >}} |
+| $debug | {{< arguments/debug type="true" >}} | {{< arguments/debug description="true" >}} | {{< arguments/debug examples="true" >}} |
+
+### Examples ### {#selectCountExamples .mt-5}
+
+{{< heading level="4" heading="Basic Example" small="Db::SelectCount()" >}}
+
+```php
+$from = 'users'; // The table name
+$fields = ['*' => 'rowsCount']; // The columns you want to select
+$where = ['status' => 'active']; // The conditions for the WHERE clause
+
+$total = $db->selectCount($from, $fields, $where);
+echo $total; // Outputs the count of active users
+```
+
+In this example, we are counting the number of records in the 'users' table where the 'status' is 'active'. The method returns the total count of active users.
+
+</article>
+
+{{< separator >}}
+
+<article>
+
+## numRows()
+
+The `Db::numRows()` method returns the number of rows affected by the last executed SQL statement.
+
+### Method Signature ### {#numRowsMethodSignature .mt-5}
+
+```php
+public function numRows(): int|false
+```
+
+### Examples ### {#numRowsExamples .mt-5}
+
+{{< heading level="4" heading="Basic Example" small="Db::numRows()" >}}
+
+```php
+$db->select('users', '*', ['status' => 'active']);
+$rowCount = $db->numRows();
+
+echo $rowCount; // Outputs the number of active users retrieved
+```
+
+In this example, after executing a SELECT statement to retrieve all active users from the 'users' table, we use the `numRows()` method to get the number of rows returned by the query.
 
 </article>
