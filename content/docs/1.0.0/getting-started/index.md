@@ -50,6 +50,41 @@ Replace `'localhost'`, `'sampledatabase'`, `'root'`, `'Mysql'`, `'production-db_
 
 The program will automatically detect if it's running on a local or production server and use the appropriate settings accordingly.
 
+All the constants defined in `connection.php` are guarded, so the file stays silent if your application has already declared them (for example in its own connection file loaded before the vendor autoload).
+
+## Alternative: the Db::create() Static Factory
+
+The DI container described below always connects with the credentials defined in `connection.php`. When you need to connect with **arbitrary credentials** — installers, connection testers, multi-database applications — use the `Db::create()` static factory instead. It assembles the driver, opens the connection and wires a `QueryBuilder` in a single call:
+
+```php
+use Migliori\PowerLitePdo\Db;
+
+$db = Db::create(
+    [
+        'host'    => 'localhost',
+        'port'    => '3306',
+        'dbname'  => 'sakila',
+        'charset' => 'utf8mb4',
+    ],
+    'db_user',
+    'db_password'
+);
+
+// connect to another server with an explicit driver
+$db2 = Db::create(
+    ['host' => 'db.example.com', 'port' => '5432', 'dbname' => 'shop', 'charset' => 'utf8'],
+    'db_user',
+    'db_password',
+    'pgsql' // 'mysql' (default), 'pgsql', 'firebird' or 'oci'
+);
+```
+
+Notes:
+
+- The optional `$driver` argument defaults to the `PDO_DRIVER` constant if it is defined, otherwise `'mysql'`.
+- Each call creates a new, independent connection: use the container when you need a single shared instance, and `Db::create()` when you need dedicated connections.
+- An unsupported driver name throws `Migliori\PowerLitePdo\Exception\DriverManagerException`.
+
 ## Security
 
 To optimize the security of your connection parameters, please refer to the [Security](/docs/{{< param "doc_version" >}}/security) section.
