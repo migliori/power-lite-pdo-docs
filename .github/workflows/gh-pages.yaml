@@ -44,7 +44,10 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: "latest"
+          # Pinned: latest (v0.166+) pulls hugomods/search v0.20+ which needs
+          # the fuse.js npm module absent from package.json. Local builds use
+          # 0.124.1 with modules locked in go.mod / go.sum.
+          hugo-version: "0.124.1"
           extended: true
 
       - name: Setup Dart Sass
@@ -54,8 +57,9 @@ jobs:
       - name: Install Node.js dependencies
         run: npm ci
 
-      - name: Get Hugo modules
-        run: hugo mod get -u
+      # Modules are locked in go.mod / go.sum: build with pinned versions
+      # for reproducible CI. Run `hugo mod get -u` manually to upgrade,
+      # then verify the build locally before pushing.
 
       - name: Build with Hugo
         env:
